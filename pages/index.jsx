@@ -19,16 +19,16 @@ const Home = () => {
         <meta name="description" content="genared by cre" />
         <link rel="icon" href="/yanzologofix.png" />
       </Head>
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-800">
+      <main className="px-5 bg-white w-full md:px-20 lg:px-40 dark:bg-gray-800">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-JapaneseRobot text-sky-400">
+          <nav className="py-10 mb-12 flex justify-between items-center">
+            <h1 className="text-xl md:text-2xl md:-ml-28 font-JapaneseRobot text-sky-400">
               Yanzo.site
             </h1>
             <ul className="flex items-center">
-              <li className="text-gray-600 dark:text-gray-100 flex">
-                <icon.BsFillSunFill className="text-2xl mx-4 hidden dark:block" />
-                <icon.BsFillMoonStarsFill className=" dark:hidden text-2xl mx-4" />
+              <li className="text-gray-600 md:-mr-24 dark:text-gray-100 flex items-center">
+                <icon.BsFillSunFill className="text-2xl md:text-3xl mx-4 hidden dark:block" />
+                <icon.BsFillMoonStarsFill className=" dark:hidden text-2xl md:text-3xl mx-4" />
                 <Switch
                   checked={darkMode}
                   onChange={setDarkMode}
@@ -47,18 +47,18 @@ const Home = () => {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-sky-400 font-medium">
+            <h2 className="text-4xl md:text-5xl py-2 text-sky-400 font-medium">
               Tentang Yanzo
             </h2>
-            <h3 className="text-2xl py-2 text-gray-800 dark:text-gray-100">
-              vlogger dan streamer{" "}
+            <h3 className="text-2xl md:text-4xl py-2 text-gray-800 dark:text-gray-100">
+              Vlogger dan Streamer
             </h3>
-            <p className="text-gray-900 dark:text-gray-100">
-              hanya seorang virtual creator yang pengen ngerandom{" "}
+            <p className="text-gray-900 pt-5 md:text-lg dark:text-gray-100">
+              hanya seorang virtual creator yang pengen ngerandom
               <span className="text-sky-300">jangan lupa mampir</span> UwU
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-200">
+          <div className="text-5xl md:text-6xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-200">
             <a href="https://twitter.com/shawty_yanzo" target="_blank">
               <logo.AiFillTwitterCircle />
             </a>
@@ -72,30 +72,30 @@ const Home = () => {
               <logo.AiFillInstagram />
             </a>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-sky-300 to-gray-600 max-w-lg w-full rounded-full mt-20 overflow-hidden ">
+          <div className="relative mx-auto scale-75 md:scale-90 bg-gradient-to-b from-sky-300 to-gray-600 max-w-lg w-full rounded-full mt-20 overflow-hidden ">
             <Image src={isiup} className="scale-125" alt="logo" />
           </div>
         </section>
 
         <section>
-          <h2 className="text-5xl text-center text-sky-400 pt-20  ">
+          <h2 className="text-4xl md:text-5xl  font-semibold text-center text-sky-400 pt-12  ">
             The Creator
           </h2>
-          <div className="flex mt-32 pb-32 items-start">
-            <div className="w-1/3 relative z-0 overflow-hidden">
+          <div className="flex flex-col w-full lg:flex-row mt-6 pb-32 items-start">
+            <div className="lg:w-1/3 block relative z-0 overflow-hidden scale-75 md:scale-100 md:-ml-16 lg:mt-12">
               <Image src={isi} width={500} height={500} className="" />
               <Image
                 src={Flippi}
-                width={500}
-                height={500}
-                className="absolute bottom-4 scale-125"
+                width={450}
+                height={450}
+                className="absolute bottom-4 scale-125 "
               />
             </div>
-            <div className="w-2/3">
-              <h3 className="text-3xl py-1 pt-9 lg:ml-10 dark:text-gray-100">
+            <div className="lg:w-2/3 ">
+              <h3 className="text-2xl font-semibold text-sky-400  py-1 pt-9  md:ml-6  dark:text-gray-100">
                 Yanzo Shawty
               </h3>
-              <p className="text-md py-2 leading-8  text-gray-800 text-justify lg:ml-10 mr-28 dark:text-gray-100">
+              <p className="text-sm md:-mr-40 md:px-7 py-1 leading-8 tracking-wide text-gray-800 text-justify   dark:text-gray-100">
                 Yanzo shawty, juga dikenal sebagai Yanzo, adalah seorang virtual
                 YouTuber asal Indonesia yang terkenal dengan keseruannya dalam
                 bermain game dan mengobrol dengan para penontonnya. Dia memiliki
